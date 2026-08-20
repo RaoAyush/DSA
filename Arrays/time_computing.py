@@ -5,7 +5,7 @@ for i in range(n):
     arr.append(x)
 
 time=arr[0]
-for i in range(0,n-1):
-    time +=abs(arr[i]-arr[i+1])
+for i in range(1,n):
+    time +=abs(arr[i-1]-arr[i])
 
 print("Total time taken to reach last floor is ", time)
